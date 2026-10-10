@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPI SENJA | Coffee Shop</title>
+    <meta name="description" content="Nikmati kopi pilihan dan suasana hangat di Kopi Senja.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">KOPI<span>SENJA.</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+
+        <button class="cart-button" id="openCart">
+            🛒 Keranjang <span id="cartCount">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR DAILY COFFEE RITUAL</p>
+                <h1>Secangkir Kopi,<br>Sejuta <span>Cerita.</span></h1>
+                <p class="hero-description">
+                    Temukan rasa terbaik dari biji kopi pilihan,
+                    diracik dengan hati untuk menemani setiap
+                    perjalanan dan cerita harimu.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">Jelajahi Menu ↗</a>
+                    <a href="#about" class="btn btn-outline">Cerita Kami</a>
+                </div>
+
+                <div class="hero-note">
+                    <span>☕</span>
+                    <p><strong>Freshly Brewed</strong><br>Diracik segar setiap hari</p>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85"
+                    alt="Kopi hangat dengan suasana coffee shop"
+                >
+                <div class="image-label">
+                    <span>EST. 2024</span>
+                    <strong>Made with love.</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <span>🌱</span>
+                <div>
+                    <h3>Biji Kopi Pilihan</h3>
+                    <p>Dipilih dengan kualitas terbaik.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span>☕</span>
+                <div>
+                    <h3>Diracik Fresh</h3>
+                    <p>Dibuat saat kamu memesan.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span>🤎</span>
+                <div>
+                    <h3>Suasana Hangat</h3>
+                    <p>Tempat nyaman untuk bercerita.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <p class="eyebrow">OUR SIGNATURE</p>
+                <h2>Temukan Favoritmu</h2>
+                <p>Dari espresso yang kuat hingga latte yang lembut.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="Semua">Semua</button>
+                <button class="filter-btn" data-category="Kopi">Coffee</button>
+                <button class="filter-btn" data-category="Nonkopi">Non-Coffee</button>
+                <button class="filter-btn" data-category="Makanan">Makanan</button>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85"
+                    alt="Interior coffee shop yang nyaman"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">OUR STORY</p>
+                <h2>Bukan Sekadar Kopi,<br>Tapi Sebuah Cerita.</h2>
+                <p>
+                    KOPI SENJA hadir untuk menciptakan ruang
+                    sederhana tempat orang bertemu, berbagi
+                    cerita, bekerja, dan menikmati waktu.
+                </p>
+                <p>
+                    Kami percaya bahwa secangkir kopi yang baik
+                    dapat membuat hari biasa terasa istimewa.
+                    Setiap sajian dibuat dengan perhatian pada
+                    rasa, kualitas, dan kenyamanan.
+                </p>
+                <a href="#menu" class="btn btn-primary">Coba Menu Kami ↗</a>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <p>“</p>
+            <h2>Pelan-pelan saja.<br>Nikmati kopimu, nikmati harimu.</h2>
+            <span>— Filosofi Kopi Senja —</span>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div>
+                <p class="eyebrow">COME SAY HELLO</p>
+                <h2>Tempat Cerita Dimulai.</h2>
+                <p>
+                    Mampir untuk secangkir kopi favoritmu.
+                    Kami tunggu kedatanganmu!
+                </p>
+            </div>
+
+            <div class="contact-card">
+                <p>📍 <strong>Alamat</strong><br>Isi alamat coffee shop kamu</p>
+                <p>🕒 <strong>Jam Operasional</strong><br>Setiap hari, 09.00–22.00</p>
+                <p>📞 <strong>Kontak</strong><br>Isi nomor WhatsApp kamu</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">KOPI<span>SENJA.</span></a>
+        <p>Good coffee, good mood, good stories.</p>
+        <p class="copyright">© <span id="year"></span> KOPI SENJA. Dibuat dengan ☕ dan hati.</p>
+    </footer>
+
+    <!-- Keranjang belanja -->
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Keranjang belanja">
+        <div class="cart-header">
+            <h2>Keranjang Kamu</h2>
+            <button id="closeCart" aria-label="Tutup keranjang">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <strong id="cartTotal">Rp0</strong>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+                Lanjut Pesan →
+            </button>
+            <p class="cart-note">Pesanan demo — belum terhubung ke pembayaran.</p>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
